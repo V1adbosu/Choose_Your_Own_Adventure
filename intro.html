@@ -24,12 +24,15 @@
 function submit(){
   var begin = document.getElementById("input").value;
   sessionStorage.setItem('begin',begin);
-if (begin = "YES"){
+if (begin == "YES"){
   window.location.href = 'stage1.html';
 }
-else {
+else if (begin == "STOP"){
   window.location.href = 'introStop.html';
 }
+  else {
+    
+  }
 }
   
    var nameTypedInBeginning = sessionStorage.getItem('name');
