@@ -9,11 +9,8 @@ body {
   font-family: "Sour Gummy";
 }
 
-
-
-.pooppp {
-  border: 4mm ridge rgba(211, 220, 50, .6);
-  font-size: 20px;
+.centered {
+  text-align: center;
 }
 
 button {
