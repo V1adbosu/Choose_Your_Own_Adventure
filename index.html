@@ -15,7 +15,8 @@
 <script>
 function submit() {
     var name = document.getElementById("input").value;
-    document.getElementById("1").innerHTML = "Hi " + name + "!";
+    sessionStorage.setItem('name', name);
+    window.location.href = 'intro.html';
 }
 </script>
 
