@@ -5,10 +5,19 @@
 </head>
 <body>
 
-<h1>Choose your own adventure!</h1>
-<h3>Enter Your Name</h3>
-<form>
-  <label for="name">Name:
+  <div class="centered">
+    <h1>welcome</h1>
+    <p id="1">what is your name?</p>
+    <input type="text" id="input" />
+    <button onclick="submit()">submit</button>
+  </div>
+  
+<script>
+function submit() {
+    var name = document.getElementById("input").value;
+    document.getElementById("1").innerHTML = "Hi " + name + "!";
+}
+</script>
 
 </body>
 </html>
