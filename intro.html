@@ -17,10 +17,24 @@
 </p>
 
 <input type="text" id="input" />
-
+  <button onclick="submit()">submit</button>
+</div>
+  
 <script>
+function submit(){
+  var begin = document.getElementById("input").value;
+  sessionStorage.setItem('begin',begin);
+if (begin = "YES"){
+  window.location.href = 'stage1.html';
+}
+else {
+  window.location.href = 'introStop.html';
+}
+}
+  
    var nameTypedInBeginning = sessionStorage.getItem('name');
    document.getElementById("detectiveNameBox").innerHTML = nameTypedInBeginning
+
 </script>
   
 </body>
