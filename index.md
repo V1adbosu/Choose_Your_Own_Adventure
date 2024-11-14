@@ -1,2 +1,3 @@
 # Choose your own adventure!
-[ go to option1](/option1.md)
+Something about entering the name and saving it to a variable here 
+[Begin The Adventure](/intro.md)
