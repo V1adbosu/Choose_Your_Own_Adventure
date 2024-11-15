@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1>Stage 2: The Forest Trail</h1>
+<p>
+Following Chloe’s clues, you arrive at the edge of a forest just outside of town. The trees cast long shadows, and the air is thick with silence. You spot a faint trail leading deeper into the woods.
+</p>
+<p>
+  You decide to...
+</p>
+  
+<ul>
+  <li>FOLLOW THE TRAIL (It seems as if someone has walked down this path recently)</li>
+  <li>SEARCH THE AREA AROUND YOU (Maybe Chloe dropped something nearby)</li>
+  <li>STOP (Not every case can be solved)</li>
+</ul>  
+
+  <p>
+  Type your option below(FOLLOW THE TRAIL, SEARCH THE AREA AROUND YOU, STOP):
+</p>
+  
+<input type="text" id="input" />
+  <button onclick="submit()">submit</button>
+</div>
+  
+<script>
+function submit(){
+  var option = document.getElementById("input").value;
+  sessionStorage.setItem('option',option);
+if (option == "FOLLOW THE TRAIL"){
+  window.location.href = 'stage2option1.html';
+}
+else if (option == "SEARCH THE AREA AROUND YOU"){
+  window.location.href = 'stage2option2.html';
+}
+  else if (option == "STOP"){
+  window.location.href = 'stage2option3.html';
+}
+  else {
+  }
+}
+</script>
+  
+</body>
+</html>
