@@ -19,14 +19,15 @@ body {
 }
 
 input, textarea {
-  background-color: #2f5280;
+  background-color: #90abd0;
   font-family: "Sour Gummy";
+
+  
 }
 
 button {
-  background-color: #4eb3d3; /* Green */
   border: none;
-  color: #2f5280;
+  color: #90abd0;
   padding: 7px 7px;
   text-align: center;
   background-color: #0f1329;
