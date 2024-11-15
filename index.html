@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- this is the intro/welcome text -->
   <div class="centered">
     <h1>Welcome to Unsolved!</h1>
     <p id="1">Tell me Detective, what is your name?</p>
@@ -13,13 +13,15 @@
   </div>
   
 <script>
+  //this saves the user's name into a variable
 function submit() {
     var name = document.getElementById("input").value;
     sessionStorage.setItem('name', name);
+  //this allows the user to move to the next page
     window.location.href = 'intro.html';
 }
 </script>
-  
+  //stylization
   <body style="background-color:#0f1329;">
 
 </body>
