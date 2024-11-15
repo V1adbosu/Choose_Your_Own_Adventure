@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1>Stage 5: The Barn</h1>
+<p>
+You approach the barn at the village’s edge. The air feels thick and suffocating, as though the entire place is holding its breath. The moonlight casts an eerie shadow on the walls, you can feel that the end of the investigation is near. Chloe and the stalker might be inside. 
+</p>
+<p>
+  Okay detective ___, how are you going to approach this?:
+</p>
+  
+<ul>
+  <li>ENTER THE BARN QUIETLY (Try to sneak in and assess the situation without drawing attention)</li>
+  <li>CREATE A DISTRACTION OUTSIDE (Perhaps making a noise outside will lure the kidnapper out, giving you a chance to slip in.)</li>
+  <li>STOP (t’s too risky to proceed alone)</li>
+</ul>  
 
+  <p>
+  Type your option below(ENTER THE BARN QUIETLY, CREATE A DISTRACTION OUTSIDE, STOP):
+</p>
+  
+<input type="text" id="input" />
+  <button onclick="submit()">submit</button>
+</div>
+  
+<script>
+function submit(){
+  var option = document.getElementById("input").value;
+  sessionStorage.setItem('option',option);
+if (option == "ENTER THE BARN QUIETLY"){
+  window.location.href = 'stage5option1.html';
+}
+else if (option == "CREATE A DISTRACTION OUTSIDE"){
+  window.location.href = 'stage5option2.html';
+}
+  else if (option == "STOP"){
+  window.location.href = 'stage5option3.html';
+}
+  else {
+  }
+}
+</script>
+  
+</body>
+</html>
