@@ -10,7 +10,7 @@
 You approach the barn at the village’s edge. The air feels thick and suffocating, as though the entire place is holding its breath. The moonlight casts an eerie shadow on the walls, you can feel that the end of the investigation is near. Chloe and the stalker might be inside. 
 </p>
 <p>
-  Okay detective ___, how are you going to approach this?:
+  Okay detective <span id="detectiveNameBox"></span>, how are you going to approach this?:
 </p>
   
 <ul>
@@ -28,6 +28,9 @@ You approach the barn at the village’s edge. The air feels thick and suffocati
 </div>
   
 <script>
+     var nameTypedInBeginning = sessionStorage.getItem('name');
+   document.getElementById("detectiveNameBox").innerHTML = nameTypedInBeginning
+
 function submit(){
   var option = document.getElementById("input").value;
   sessionStorage.setItem('option',option);
@@ -44,6 +47,7 @@ else if (option == "CREATE A DISTRACTION OUTSIDE"){
   }
 }
 </script>
+  
   
 </body>
 </html>
