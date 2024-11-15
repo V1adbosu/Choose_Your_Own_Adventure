@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1>Stage 6: Final Confrontation</h1>
+<p>
+As you step further into the barn, you think about hiding from a distance to see what the stalker is planning on doing. But suddenly, your foot catches on a loose board, and you stumble to the ground, the noise echoing through the barn. The stalker’s head snaps up, and their eyes lock onto yours with a cold, menacing glare. The air is tense, and you can feel the danger in every heartbeat. You’ll have to act fast if you want to get Chloe out of here safely.
+</p>
+<p>
+  What tactic will you use to put an end to the case?:
+</p>
+  
+<ul>
+  <li>CREATE A SUDDEN DISTRACTION (Throw something at the stalker)</li>
+  <li>CONFRONT THE STALKER (Fight the stalker)</li>
+  <li>STOP (You are no match for the stalker)</li>
+</ul>  
 
+  <p>
+  Type your option below(CREATE A SUDDEN DISTRACTION, CONFRONT THE STALKER, STOP):
+</p>
+  
+<input type="text" id="input" />
+  <button onclick="submit()">submit</button>
+</div>
+  
+<script>
+function submit(){
+  var option = document.getElementById("input").value;
+  sessionStorage.setItem('option',option);
+if (option == "CREATE A SUDDEN DISTRACTION"){
+  window.location.href = 'stage6option1.html';
+}
+else if (option == "CONFRONT THE STALKER"){
+  window.location.href = 'stage6option2.html';
+}
+  else if (option == "STOP"){
+  window.location.href = 'stage6option3.html';
+}
+  else {
+  }
+}
+</script>
+  
+</body>
+</html>
