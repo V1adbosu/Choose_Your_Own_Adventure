@@ -12,7 +12,7 @@ You are in Chloe’s room, it is tidy with posters covering the walls and her sc
 <p>
   Do you...
 </p>
-  
+  <!-- the list of different user options -->
 <ul>
   <li>CHECK THE DESK (There might be notes or a journal with helpful information)</li>
   <li>LOOK UNDER THE BED (Things are often hidden where people don't expect)</li>
@@ -31,6 +31,7 @@ You are in Chloe’s room, it is tidy with posters covering the walls and her sc
 function submit(){
   var option = document.getElementById("input").value;
   sessionStorage.setItem('option',option);
+  //depending on user input sends them to the right option page
 if (option == "CHECK THE DESK"){
   window.location.href = 'stage1option1.html';
 }
