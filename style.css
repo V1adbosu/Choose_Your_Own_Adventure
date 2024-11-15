@@ -12,10 +12,15 @@ div {
 
 body {
   font-family: "Sour Gummy";
+  background-color: #0f1329
 }
 
 .centered {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
 }
 
 input, textarea {
@@ -24,6 +29,7 @@ input, textarea {
 
   
 }
+
 
 button {
   border: none;
@@ -36,3 +42,4 @@ button {
   font-size: 16px;
   font-family: "Sour Gummy";
 }
+
