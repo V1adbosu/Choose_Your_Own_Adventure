@@ -16,18 +16,21 @@
 <p>
   Are you ready? type YES to begin (type STOP to quit)
 </p>
-
+<!-- receives user input -->
 <input type="text" id="input" />
   <button onclick="submit()">submit</button>
 </div>
   
 <script>
+  //code for submit button
 function submit(){
   var begin = document.getElementById("input").value;
   sessionStorage.setItem('begin',begin);
+  //moves user to next stage is they say "YES"
 if (begin == "YES"){
   window.location.href = 'stage1.html';
 }
+  //moves user back to home page if they say "STOP"
 else if (begin == "STOP"){
   window.location.href = 'introStop.html';
 }
@@ -35,7 +38,7 @@ else if (begin == "STOP"){
     
   }
 }
-  
+  //retrieves the user name input from the welcome page
    var nameTypedInBeginning = sessionStorage.getItem('name');
    document.getElementById("detectiveNameBox").innerHTML = nameTypedInBeginning
 
