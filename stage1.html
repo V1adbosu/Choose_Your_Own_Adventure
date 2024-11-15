@@ -4,11 +4,50 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-Explore the Forest Deeper
-
+  
+<h1>Stage 1: Explore the Forest Deeper</h1>
+<p>
 You are in Chloe’s room, it is tidy with posters covering the walls and her schoolwork nearly stacked on her desk. However, something feels off. To get started, you need to choose your first step carefully.
+</p>
+<p>
+  Do you...
+</p>
+ 
+  <p>
+  Do you...
+</p>
 
-[Check the Desk. (There might be notes or a journal with helpful information)](/stage1option1.md)
-[Look under the bed. (Things are often hidden where people don't expect)](/stage1option2.md)
-[Stop and give up. (This case is tough. Maybe it's best to leave it to someone else.)](/stage1option3.md)
+<ol>
+  <li>Check the Desk. (There might be notes or a journal with helpful information)</li>
+  <li>Look under the bed. (Things are often hidden where people don't expect)</li>
+  <li>Stop and give up. (This case is tough. Maybe it's best to leave it to someone else.)</li>
+</ol>  
+
+  <p>
+  Enter the number your choice corresponds with
+</p>
+  
+<input type="text" id="input" />
+  <button onclick="submit()">submit</button>
+</div>
+  
+<script>
+function submit(){
+  var option = document.getElementById("input").value;
+  sessionStorage.setItem('begin',begin);
+if (option == "1"){
+  window.location.href = 'stage1option1.html';
+}
+else if (option == "2"){
+  window.location.href = 'stage1option2.html';
+}
+  else if (option == "3"){
+  window.location.href = 'stage1option3.html';
+}
+  else {
+  }
+}
+</script>
+  
+</body>
+</html>
