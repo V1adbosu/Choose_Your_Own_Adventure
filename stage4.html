@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1>Stage 4: The Village</h1>
+<p>
+Following the letter, you rush to the village, a small area on the outskirts of the town known for its quiet streets and few residents. It’s late evening, and the village seems even quieter than usual. You know Chloe’s meeting might be happening soon, so you need to act quickly.
+</p>
+<p>
+  You chose to…
+</p>
+  
+<ul>
+  <li>ASK AROUND FOR ANY SIGHTINGS FOR CHLOE (Maybe someone noticed her arriving here recently)</li>
+  <li>LOOK FOR ANY SIGNS OR CLUES NEAR THE TOWN SQUARE (If Chloe came here, she may have left something behind.)</li>
+  <li>STOP (This case is getting too complicated)</li>
+</ul>  
 
+  <p>
+  Type your option below(ASK AROUND FOR ANY SIGHTINGS FOR CHLOE, LOOK FOR ANY SIGNS OR CLUES NEAR THE TOWN SQUARE, STOP):
+</p>
+  
+<input type="text" id="input" />
+  <button onclick="submit()">submit</button>
+</div>
+  
+<script>
+function submit(){
+  var option = document.getElementById("input").value;
+  sessionStorage.setItem('option',option);
+if (option == "ASK AROUND FOR ANY SIGHTINGS FOR CHLOE"){
+  window.location.href = 'stage4option1.html';
+}
+else if (option == "LOOK FOR ANY SIGNS OR CLUES NEAR THE TOWN SQUARE"){
+  window.location.href = 'stage4option2.html';
+}
+  else if (option == "STOP"){
+  window.location.href = 'stage4option3.html';
+}
+  else {
+  }
+}
+</script>
+  
+</body>
+</html>
