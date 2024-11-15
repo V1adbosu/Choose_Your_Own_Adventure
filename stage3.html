@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1>Stage 3: Abandoned cabin</h1>
+<p>
+After following the trail, you come to an old, abandoned cabin deep in the forest. The windows are shattered, and the door is slightly open. This place looks like it’s been untouched for years.
+</p>
+<p>
+  What is your course of action Detective ____?:
+</p>
+  
+<ul>
+  <li>ENTER THE CABIN THROUGH THE FRONT DOOR (It’s obviously the easiest thing to do)</li>
+  <li>LOOK FOR ANOTHER WAY IN (Going through the front door seems too easy, right?)</li>
+  <li>STOP (This place gives you the heebie jeebies)</li>
+</ul>  
 
+  <p>
+  Type your option below(FOLLOW THE TRAIL, SEARCH THE AREA AROUND YOU, STOP):
+</p>
+  
+<input type="text" id="input" />
+  <button onclick="submit()">submit</button>
+</div>
+  
+<script>
+function submit(){
+  var option = document.getElementById("input").value;
+  sessionStorage.setItem('option',option);
+if (option == "ENTER THE CABIN THROUGH THE FRONT DOOR"){
+  window.location.href = 'stage3option1.html';
+}
+else if (option == "LOOK FOR ANOTHER WAY IN"){
+  window.location.href = 'stage3option2.html';
+}
+  else if (option == "STOP"){
+  window.location.href = 'stage3option3.html';
+}
+  else {
+  }
+}
+</script>
+  
+</body>
+</html>
