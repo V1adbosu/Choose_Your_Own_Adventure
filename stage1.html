@@ -13,14 +13,14 @@ You are in Chloe’s room, it is tidy with posters covering the walls and her sc
   Do you...
 </p>
   
-<ol>
-  <li>Check the Desk. (There might be notes or a journal with helpful information)</li>
-  <li>Look under the bed. (Things are often hidden where people don't expect)</li>
-  <li>Stop and give up. (This case is tough. Maybe it's best to leave it to someone else.)</li>
-</ol>  
+<ul>
+  <li>CHECK THE DESK (There might be notes or a journal with helpful information)</li>
+  <li>LOOK UNDER THE BED (Things are often hidden where people don't expect)</li>
+  <li>STOP (This case is tough. Maybe it's best to leave it to someone else.)</li>
+</ul>  
 
   <p>
-  Enter the number your choice corresponds with:
+  Type your option below(CHECK THE DESK, LOOK UNDER THE BED, STOP):
 </p>
   
 <input type="text" id="input" />
@@ -31,13 +31,13 @@ You are in Chloe’s room, it is tidy with posters covering the walls and her sc
 function submit(){
   var option = document.getElementById("input").value;
   sessionStorage.setItem('option',option);
-if (option == "1"){
+if (option == "CHECK THE DESK"){
   window.location.href = 'stage1option1.html';
 }
-else if (option == "2"){
+else if (option == "LOOK UNDER THE BED"){
   window.location.href = 'stage1option2.html';
 }
-  else if (option == "3"){
+  else if (option == "STOP"){
   window.location.href = 'stage1option3.html';
 }
   else {
