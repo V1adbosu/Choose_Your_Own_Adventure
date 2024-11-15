@@ -1,5 +1,37 @@
-Check the Desk. (There might be notes or a journal with helpful information)
-
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1>Check the Desk. (There might be notes or a journal with helpful information)</h1>
+<p>
 You find Chloe’s school planner, filled with assignments and doodles, and a recent note mentioning that she will be exploring the woods with friends. This could be important. The forest seems like a good place to look.
+</p>
+<p>
+  Do you...
+</p>
+  
+<ul>
+  <li>CHECK THE DESK (There might be notes or a journal with helpful information)</li>
+  <li>LOOK UNDER THE BED (Things are often hidden where people don't expect)</li>
+  <li>STOP (This case is tough. Maybe it's best to leave it to someone else.)</li>
+</ul>  
 
-[Begin Stage 2](/stage2.md)
+  <p>
+  Type your option below(CHECK THE DESK, LOOK UNDER THE BED, STOP):
+</p>
+  
+<input type="text" id="input" />
+  <button onclick="submit()">Continue to next stage.</button>
+</div>
+  
+<script>
+function submit(){
+  window.location.href = 'stage2.html';
+}
+</script>
+  
+</body>
+</html>
